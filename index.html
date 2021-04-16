@@ -7,11 +7,56 @@
     <title>Form Services</title>
 </head>
 <body>
-    <form method="POST" action="https://simple-form.com/vincent.yu618@gmail.com">
-        <input type="text" name="name" placeholder="your name" />
-        <input type="email" name="replyTo" placeholder="your-email-here" />
-        <textarea name="message" placeholder="Your message"></textarea>
-        <input type="submit" value="Send" />
-    </form>
+    <h1>E-Mail Form Submission</h1>
+    <div class="container">
+        <form method="POST" action="https://simple-form.com/vincent.yu618@gmail.com">
+            <div class="row">
+                <div class="col-1">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="fname" name="firstname" placeholder="your first name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="lname" name="firstname" placeholder="your last name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="school">School</label>
+                </div>
+                <div class="col-2">
+                    <select id="school"  name="school">
+                        <option value="university of british columbia">University of British Columbia</option>
+                        <option value="simon fraser university">Simon Fraser University</option>
+                        <option value="capilano university">Capilano University</option>
+                        <option value="bcit">British Columbia Institute of Technology</option>
+                    </select>
+                </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="studentnum">Student Number</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="studentnum" name="studentnumber" placeholder="your student number">
+                </div>
+            <div class="row">
+                <div class="col-1">
+                    <label id="subject">Subject</label>
+                </div>
+                <div class="col-2">
+                    <textarea id="subject" name="subject" placeholder="your message..." style="height: 250px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
