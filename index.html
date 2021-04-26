@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Form Services</title>
 </head>
 <body>
-    
+    <h1>E-Mail Form Submission</h1>
+    <div class="container">
+        <div class="content">
+            <form method="POST" action="https://simple-form.com/your-email-here">
+                <div class="firstname">
+                    <div class="label">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="text">
+                        <input type="text" id="fname" name="firstname" placeholder="your first name">
+                    </div>
+                </div>
+                <div class="lastname">
+                    <div class="label">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="text">
+                        <input type="text" id="lname" name="firstname" placeholder="your last name">
+                    </div>
+                </div>
+                <div class="school_name">
+                    <div class="label">
+                        <label for="school">School</label>
+                    </div>
+                    <div class="text">
+                        <select id="school"  name="school">
+                            <option value="none">--------</option>
+                            <option value="university of british columbia">University of British Columbia</option>
+                            <option value="simon fraser university">Simon Fraser University</option>
+                            <option value="capilano university">Capilano University</option>
+                            <option value="bcit">British Columbia Institute of Technology</option>
+                            <option value="emily carr university of art + design">Emily Carr University of Art + Design</option>
+                        </select>
+                    </div>
+                <div class="studentnumber">
+                    <div class="label">
+                        <label for="studentnum">Student Number</label>
+                    </div>
+                    <div class="text">
+                        <input type="text" id="studentnum" name="studentnumber" placeholder="your student number">
+                    </div>
+                <div class="subject">
+                    <div class="label">
+                        <label id="subject">Subject</label>
+                    </div>
+                    <div class="text">
+                        <textarea id="subject" name="subject" placeholder="your message..." style="height: 250px"></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
